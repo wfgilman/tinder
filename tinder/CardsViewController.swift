@@ -10,13 +10,18 @@ import UIKit
 
 class CardsViewController: UIViewController {
 
-    @IBOutlet weak var profileImageView: UIImageView!
     var profileImageCenter: CGPoint!
+    
+    @IBOutlet weak var customView: DraggableImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        customView.profileImage = UIImage(named: "ryan")!
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(onPanProfileImage(_:)))
+        customView.addGestureRecognizer(panGesture)
+        customView.isUserInteractionEnabled = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,13 +29,13 @@ class CardsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func onPanProfileImage(_ sender: UIPanGestureRecognizer) {
+    func onPanProfileImage(_ sender: UIPanGestureRecognizer) {
         let translation = sender.translation(in: view)
         
         if sender.state == .began {
-            profileImageCenter = profileImageView.center
+            profileImageCenter = customView.center
         } else if sender.state == .changed {
-            profileImageView.center = CGPoint(x: profileImageCenter.x + translation.x, y: profileImageCenter.y)
+            customView.center = CGPoint(x: profileImageCenter.x + translation.x, y: profileImageCenter.y)
         } else if sender.state == .ended {
             
         }
