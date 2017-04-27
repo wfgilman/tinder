@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		BE8D3E291EB1883200BE92C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8D3E281EB1883200BE92C9 /* AppDelegate.swift */; };
-		BE8D3E2B1EB1883200BE92C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8D3E2A1EB1883200BE92C9 /* ViewController.swift */; };
 		BE8D3E2E1EB1883200BE92C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE8D3E2C1EB1883200BE92C9 /* Main.storyboard */; };
 		BE8D3E301EB1883200BE92C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE8D3E2F1EB1883200BE92C9 /* Assets.xcassets */; };
 		BE8D3E331EB1883200BE92C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE8D3E311EB1883200BE92C9 /* LaunchScreen.storyboard */; };
+		BE8D3E3B1EB1887100BE92C9 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8D3E3A1EB1887100BE92C9 /* CardsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BE8D3E251EB1883200BE92C9 /* tinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE8D3E281EB1883200BE92C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE8D3E2A1EB1883200BE92C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BE8D3E2D1EB1883200BE92C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE8D3E2F1EB1883200BE92C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE8D3E321EB1883200BE92C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE8D3E341EB1883200BE92C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE8D3E3A1EB1887100BE92C9 /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +54,22 @@
 		BE8D3E271EB1883200BE92C9 /* tinder */ = {
 			isa = PBXGroup;
 			children = (
+				BE8D3E3C1EB1888400BE92C9 /* View Controllers */,
 				BE8D3E281EB1883200BE92C9 /* AppDelegate.swift */,
-				BE8D3E2A1EB1883200BE92C9 /* ViewController.swift */,
 				BE8D3E2C1EB1883200BE92C9 /* Main.storyboard */,
 				BE8D3E2F1EB1883200BE92C9 /* Assets.xcassets */,
 				BE8D3E311EB1883200BE92C9 /* LaunchScreen.storyboard */,
 				BE8D3E341EB1883200BE92C9 /* Info.plist */,
 			);
 			path = tinder;
+			sourceTree = "<group>";
+		};
+		BE8D3E3C1EB1888400BE92C9 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BE8D3E3A1EB1887100BE92C9 /* CardsViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE8D3E2B1EB1883200BE92C9 /* ViewController.swift in Sources */,
 				BE8D3E291EB1883200BE92C9 /* AppDelegate.swift in Sources */,
+				BE8D3E3B1EB1887100BE92C9 /* CardsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
